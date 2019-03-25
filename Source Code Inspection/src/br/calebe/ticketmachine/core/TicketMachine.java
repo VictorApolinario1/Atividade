@@ -28,7 +28,7 @@ public class TicketMachine {
             }
         }
         if (!achou) {
-            throw new PapelMoedaInvalidaException("Nota inválida");
+            throw new PapelMoedaInvalidaException();
         }
         this.saldo += quantia;
     }
@@ -37,9 +37,8 @@ public class TicketMachine {
         return saldo;
     }
 
-    public Iterator<PapelMoeda> getTroco() {
-        Troco t = new Troco(saldo);
-        return t.getIterator();
+    public Iterator<Integer> getTroco() {
+        return null;
     }
 
     public String imprimir() throws SaldoInsuficienteException {
