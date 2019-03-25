@@ -39,7 +39,7 @@ public class TicketMachine {
 
     public Iterator<PapelMoeda> getTroco() {
         Troco t = new Troco(saldo);
-        return null;
+        return t.getIterator();
     }
 
     public String imprimir() throws SaldoInsuficienteException {
