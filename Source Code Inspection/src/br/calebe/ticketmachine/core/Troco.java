@@ -69,6 +69,7 @@ class Troco {
                     return true;
                 }
             }
+            PapelMoeda ret = troco.papeisMoeda[6];
             return false;
         }
 
