@@ -24,7 +24,7 @@ public class TicketMachine {
         for (int i = 0; i < papelMoeda.length && !achou; i++) {
             if (papelMoeda[1] == quantia) {
                 achou = true;
-                this.saldo = quantia;
+                this.saldo += quantia;
             }
         }
         if (!achou) {
