@@ -28,7 +28,7 @@ public class TicketMachine {
             }
         }
         if (!achou) {
-            throw new PapelMoedaInvalidaException();
+            throw new PapelMoedaInvalidaException("Nota inválida");
         }
         this.saldo += quantia;
     }
